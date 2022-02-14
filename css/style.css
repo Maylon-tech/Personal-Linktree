@@ -1,0 +1,119 @@
+
+
+body {
+    font-family: arial;
+    background-image: url(../img/background\ 01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header .avatar {
+    width: 100px;
+    height: 105px;
+    margin: 15px auto 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 0 14px white;
+    -webkit-animation: floating 2s ease-in-out infinite;
+    animation: floating 2s ease-in-out infinite;
+}
+
+.header h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.header h2 {
+    font-size: 14px;
+    font-weight: 150;
+    margin-top: 5px;
+}
+
+
+.conteudo {
+    height: 100vh;
+    min-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo ul {
+    list-style: none;
+}
+
+.conteudo li {
+    border: 1px solid white;
+    border-radius: 14px 4px;
+    margin: 20px auto;
+    padding: 20px;
+} 
+
+
+
+.conteudo li .toast {   
+    position: absolute;
+    border: 1px solid rgb(196, 4, 186);
+    border-radius: 7px;
+    padding: 10px;
+    color: white;
+    margin-left: 420px;
+    text-align: center;
+    display: none;
+}
+
+.conteudo .toast.visible {
+    display: inline-block;
+    animation: floating 2s ease-in-out ;
+}
+
+
+.conteudo li:hover {
+    box-shadow: 0 0 15px white;
+}
+
+.conteudo a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.conteudo span {
+    display: block;
+    color: rgb(186, 174, 174);
+    font-size: 14px;
+}
+
+
+
+@-webkit-keyframes floating {
+    0% {
+        transform: translateY(0px)
+    }
+    50% {
+        transform: translateY(18px)
+    }
+    100% {
+        transform: translateY(0px)
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px)
+    }
+    50% {
+        transform: translateY(15px)
+    }
+    100% {
+        transform: translateY(0px)
+    }
+}
