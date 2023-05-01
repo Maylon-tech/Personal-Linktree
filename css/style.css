@@ -1,12 +1,10 @@
-
-
 body {
     font-family: arial;
     background-image: url(../img/background\ 01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all .4s ease;
 }
-
 .header {
     display: flex;
     flex-direction: column;
@@ -14,7 +12,6 @@ body {
     align-items: center;
     color: white;
 }
-
 .header .avatar {
     width: 100px;
     height: 105px;
@@ -24,75 +21,84 @@ body {
     -webkit-animation: floating 2s ease-in-out infinite;
     animation: floating 2s ease-in-out infinite;
 }
-
 .header h1 {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 500;
+    letter-spacing: 2px;
     margin-bottom: 0;
 }
-
 .header h2 {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 150;
     margin-top: 5px;
 }
 
-
 .conteudo {
     height: 100vh;
-    min-width: 700px;
+    min-width: 900px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-.conteudo ul {
+.conteudo .content {
     list-style: none;
+    width: 60% ;
 }
-
 .conteudo li {
     border: 1px solid white;
     border-radius: 14px 4px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 20px;
+    padding: 1.2rem;
 } 
 
-
-
+/*  Toast container  */
 .conteudo li .toast {   
     position: absolute;
-    border: 1px solid rgb(196, 4, 186);
+    height: 30px;
+    width: 250px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #eee;
     border-radius: 7px;
-    padding: 10px;
-    color: white;
-    margin-left: 420px;
+    padding: 1.5rem;
+    color: #111;
     text-align: center;
     display: none;
+    top: 20px;
+    right: 0px;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all .4s ease-in;
+}
+.conteudo .toast.visible {
+    display: block;
+    transform: translateX(0%);
+    opacity: 1;
 }
 
-.conteudo .toast.visible {
-    display: inline-block;
-    animation: floating 2s ease-in-out ;
-}
+/*  Toast container - Ending   */
 
 
 .conteudo li:hover {
     box-shadow: 0 0 15px white;
 }
-
 .conteudo a {
     color: white;
-    font-size: 17px;
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
 }
-
-.conteudo span {
+.conteudo a span {
     display: block;
-    color: rgb(186, 174, 174);
-    font-size: 14px;
+    margin-top: 1rem;
+    color: rgb(232, 217, 217);
+    font-size: 1.2rem;
+    text-align: center;
 }
-
-
 
 @-webkit-keyframes floating {
     0% {
