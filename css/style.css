@@ -4,17 +4,26 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     transition: all .4s ease;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    border: 3px solid white;
+}
+
 .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
     color: white;
+    text-align: center;
 }
 .header .avatar {
     width: 100px;
-    height: 105px;
+    height: 100px;
     margin: 15px auto 20px auto;
     border-radius: 50%;
     box-shadow: 0 0 14px white;
@@ -44,6 +53,7 @@ body {
 .conteudo .content {
     list-style: none;
     width: 60% ;
+    margin: 0 auto;
 }
 .conteudo li {
     border: 1px solid white;
@@ -105,7 +115,7 @@ body {
         transform: translateY(0px)
     }
     50% {
-        transform: translateY(18px)
+        transform: translateY(10px)
     }
     100% {
         transform: translateY(0px)
@@ -117,7 +127,7 @@ body {
         transform: translateY(0px)
     }
     50% {
-        transform: translateY(15px)
+        transform: translateY(10px)
     }
     100% {
         transform: translateY(0px)
