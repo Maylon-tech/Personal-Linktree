@@ -1,8 +1,17 @@
+@import 'Responsive.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: arial;
-    background-image: url(../img/background\ 01.jpg);
+    background-image:linear-gradient(to right, rgba(0,0,0, .6), rgba(0,0,0, .7)), url("/img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center top;
     transition: all .4s ease;
     width: 100vw;
     height: 100vh;
@@ -10,10 +19,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1160px;
     width: 100%;
     margin: 0 auto;
-    border: 3px solid white;
 }
 
 .header {
@@ -24,9 +32,9 @@ body {
 .header .avatar {
     width: 100px;
     height: 100px;
-    margin: 15px auto 20px auto;
+    margin: 15px auto 10px auto;
     border-radius: 50%;
-    box-shadow: 0 0 14px white;
+    box-shadow: 0 0 14px #eee;
     -webkit-animation: floating 2s ease-in-out infinite;
     animation: floating 2s ease-in-out infinite;
 }
@@ -38,13 +46,11 @@ body {
 }
 .header h2 {
     font-size: 1.4rem;
-    font-weight: 150;
     margin-top: 5px;
 }
 
 .conteudo {
-    height: 100vh;
-    min-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -52,47 +58,16 @@ body {
 }
 .conteudo .content {
     list-style: none;
-    width: 60% ;
-    margin: 0 auto;
 }
 .conteudo li {
-    border: 1px solid white;
-    border-radius: 14px 4px;
-    margin: 20px;
-    padding: 1.2rem;
+    background: rgba(0,0,0, .8);
+    border: 1px solid #eee;
+    border-radius: 20px 4px;
+    margin: 1rem;
+    padding: .8rem;
+    box-shadow: 0 0 15px white;
 } 
 
-/*  Toast container  */
-.conteudo li .toast {   
-    position: absolute;
-    height: 30px;
-    width: 250px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    background-color: #eee;
-    border-radius: 7px;
-    padding: 1.5rem;
-    color: #111;
-    text-align: center;
-    display: none;
-    top: 20px;
-    right: 0px;
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: all .4s ease-in;
-}
-.conteudo .toast.visible {
-    display: block;
-    transform: translateX(0%);
-    opacity: 1;
-}
-
-/*  Toast container - Ending   */
-
-
-.conteudo li:hover {
-    box-shadow: 0 0 15px white;
-}
 .conteudo a {
     color: white;
     width: 100%;
@@ -103,8 +78,7 @@ body {
     text-decoration: none;
 }
 .conteudo a span {
-    display: block;
-    margin-top: 1rem;
+    margin-top: .5rem;
     color: rgb(232, 217, 217);
     font-size: 1.2rem;
     text-align: center;

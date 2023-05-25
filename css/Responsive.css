@@ -1,6 +1,5 @@
 
 
-
 @media (max-width: 1024px) {
     
     .header h1 {
@@ -23,9 +22,12 @@
 }
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
+    .container {
+        border: 3px solid blueviolet;
+    }
     .header {
-        width: 120%;
+        width: 70%;
         margin: 0 auto;
         text-align: center;
     }
@@ -35,6 +37,10 @@
     .header h2 {
         font-size: 1.1rem;
     }
+    .conteudo {
+        width: 100%;
+        border: 3px solid orangered;
+    }
     .conteudo .content {
         width: 70%;
     }
@@ -49,21 +55,23 @@
         margin-top: .4rem;
         font-size: 1.1rem;
     }
-}
+} */
 
 
 @media (max-width: 425px) {
-    .header {
-        
-    }
     .header h1 {
         font-size: 1.5rem;
     }
     .header h2 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
+
+    .conteudo {
+        width: 100%;
+    }
+
     .conteudo .content {
-        width: 70%;
+        width: 100%;
     }
     .conteudo li {
         padding: .8rem;
@@ -80,6 +88,3 @@
 
 
 
-@media (max-width: 768px) {
-    
-}
