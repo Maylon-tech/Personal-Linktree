@@ -1,4 +1,13 @@
-
+@media (max-width: 1580px){
+    .conteudo {
+        width: 100%;
+    }
+    .conteudo li {
+        width: 700px;
+        padding: .8rem;
+        margin-top: 2rem;
+    }
+}
 
 @media (max-width: 1024px) {
     
@@ -8,7 +17,11 @@
     .header h2 {
         font-size: 1.1rem;
     }
+    .conteudo {
+        width: 100%;
+    }
     .conteudo li {
+        width: 600px;
         padding: .8rem;
         margin-top: 2rem;
     }
@@ -59,13 +72,13 @@
 
 
 @media (max-width: 425px) {
-    body {
+    /* body {
         background-image:linear-gradient(to right, rgba(0,0,0, .6), rgba(0,0,0, .7)), url("/img/background.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center bottom;
         transition: all .4s ease;
-    }
+    } */
     .header h1 {
         font-size: 1.5rem;
     }
